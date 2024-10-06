@@ -1,4 +1,3 @@
-
 import javax.swing.JFrame;
 
 public class App {
@@ -7,10 +6,15 @@ public class App {
         int boardHeight = 250;
 
         JFrame frame = new JFrame("chrome dino");
-        frame.setVisible(true);
+        // frame.setVisible(true);
         frame.setSize(boardWidth,boardHeight);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        ChromeDinosaur chromeDinosaur = new ChromeDinosaur();
+        frame.add(chromeDinosaur);
+        frame.pack();
+        frame.setVisible(true);
     }
 }
